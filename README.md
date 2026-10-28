@@ -22,7 +22,7 @@ The cloud infrastructure has been fully provisioned and secured using **Azure Fr
 * **`pump-insights` (Application Insights):** Application monitoring and error logging. Protected by a `0.1 GB` daily cap to ensure zero costs.
 
 ### 3. Security & Secrets Management (Zero-Trust Approach)
-* **`pump-key` / `pump-vault` (Azure Key Vault):** Centralized secret management. 
+* **`pump-key` (Azure Key Vault):** Centralized secret management. 
 * **Managed Identity:** The `pump-api` uses System-Assigned Managed Identity (`Key Vault Secrets User` role) to fetch connection strings at runtime without embedding any credentials in the source code or `appsettings.json`.
 
 ---
