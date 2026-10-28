@@ -67,4 +67,4 @@ During the cloud setup, we encountered and resolved several architectural challe
 - [x] Secret management via Key Vault References (Green Checkmarks verified).
 - [x] Downloaded Publish Profile and prepared the Handover Document.
 ### Next Steps:
-- [] Set up Azure DevOps YAML Pipelines (CI/CD) for automated deployments .
+- [ ] Set up Azure DevOps YAML Pipelines (CI/CD) for automated deployments .
