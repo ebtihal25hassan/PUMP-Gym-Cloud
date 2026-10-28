@@ -7,12 +7,6 @@ a gym management platform made of one responsive Flutter app (User and Admin int
 
 ---
 
-# Goal
-
-Run the whole cloud side of PUMP on Azure at **zero cost**, using only free tiers and free offers, without changing the API contracts, DTOs, enums or database schema
-
----
-
 ## 🏗️ Provisioned Azure Architecture (What is Done)
 
 The cloud infrastructure has been fully provisioned and secured using **Azure Free/Serverless Tiers**. The environment is production-ready for the development team to deploy their code.
@@ -49,7 +43,7 @@ The API is securely configured using `@Microsoft.KeyVault` references. The follo
 
 During the cloud setup, we encountered and resolved several architectural challenges:
 
-### 1. F1 Free Tier Quota Limit Error (`image_7372b2.png`)
+### 1. F1 Free Tier Quota Limit Error 
 * **Error:** `Operation cannot be completed without additional quota. Current Limit (F1 VMs): 0`.
 * **Cause:** Azure restricts subscriptions to only *one* Free (F1) App Service Plan per region (or per subscription depending on the account type). 
 * **Fix:** Ensured no hidden/orphaned F1 plans existed in the same region, and correctly deployed `pump-api` within the allowed quota constraints without upgrading to a paid tier.
