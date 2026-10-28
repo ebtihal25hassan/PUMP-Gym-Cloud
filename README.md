@@ -41,7 +41,7 @@ The API is securely configured using `@Microsoft.KeyVault` references. The follo
 - `Azure__SignalR__ConnectionString`
 - `ApplicationInsights__ConnectionString`
 - `Jwt__Key`
-- `Cors__AllowedOrigins__0` -> `https://gentle-bush-08396d20f.2.azurestaticapps.net`
+- `Cors__AllowedOrigins__0` 
 
 ---
 
@@ -72,4 +72,5 @@ During the cloud setup, we encountered and resolved several architectural challe
 - [x] Configured Managed Identities, CORS, and Networking Firewalls.
 - [x] Secret management via Key Vault References (Green Checkmarks verified).
 - [x] Downloaded Publish Profile and prepared the Handover Document.
-- [ ] Set up Azure DevOps YAML Pipelines (CI/CD) for automated deployments .
+### Next Steps:
+- [] Set up Azure DevOps YAML Pipelines (CI/CD) for automated deployments .
