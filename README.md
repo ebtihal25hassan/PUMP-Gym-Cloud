@@ -1,4 +1,3 @@
-# PUMP-Gym
 # PUMP Gym OS - Cloud Infrastructure 🚀
 
 > A fully implemented, 100% free-tier, and highly secured Cloud Infrastructure  layer for **PUMP Gym OS**, aligned with the Master Technical Specification.
@@ -10,7 +9,19 @@ a gym management platform made of one responsive Flutter app (User and Admin int
 ## 🏗️ Provisioned Azure Architecture (What is Done)
 
 The cloud infrastructure has been fully provisioned and secured using **Azure Free/Serverless Tiers**. The environment is production-ready for the development team to deploy their code.
-
+```
+Flutter Web (pump-web, Static Web Apps Free)
+        |  HTTPS + JSON, WebSocket (SignalR)
+        v
+ASP.NET Core API (pump-api, App Service F1)
+   |-- Azure SQL Database (pump-db, Free Offer, serverless)
+   |-- Blob Storage (pumpstorage: avatars, exports)
+   |-- Azure SignalR Service (pump-signalr, Free)
+   |-- Key Vault (pump-vault) via managed identity
+   '-- Application Insights (pump-insights)
+   
+CI/CD: team deploys the API with a publish profile; the web app with a Static Web Apps deployment token
+```
 ### 1. Hosted Services
 * **`pump-web` (Azure Static Web Apps):** Hosts the Flutter Web application for both User and Admin interfaces. (SKU: Free).
 * **`pump-api` (Azure App Service):** Hosts the ASP.NET Core Web API. (SKU: F1 Free).
